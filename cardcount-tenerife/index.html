@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardCount</title>
+    <base href="/cardcount-tenerife/" />
+    <link rel="stylesheet" href="/cardcount-tenerife/main-cc8f59d423a060ad.css" integrity="sha384&#x2D;ZeIEH6OtRjXeAhvEnndauk&#x2F;YdWggxH520qxZoi1eK&#x2B;0f55Ki5FiD&#x2F;S6aMgCCzjot"/>
+  <link rel="modulepreload" href="/cardcount-tenerife/frontend-7252e190ffc52843.js" crossorigin="anonymous" integrity="sha384-7YQ8XHGb9a1GVGPUdRqC6gXooQ8BcEjNqSisdVawWGkHT5suDea0Stqlcv/Yl38z"><link rel="modulepreload" href="/cardcount-tenerife/snippets/dioxus-interpreter-js-7e2aed97ebee2c55/src/js/eval.js" crossorigin="anonymous" integrity="sha384-ks/r+y1kY4du0z2hvNElbl2lGiYIMKyoewBMNJVdOl1CNoiOC+EC5U+GTT5bdpZ9"><link rel="modulepreload" href="/cardcount-tenerife/snippets/dioxus-web-10186f9fcc0b4418/inline0.js" crossorigin="anonymous" integrity="sha384-xqSmg18C2FmchYWi9fb4cSqOW4ZNNo4b7NWZK1eW+fOqg4no+2F+zETwKUf1PJy3"><link rel="modulepreload" href="/cardcount-tenerife/snippets/dioxus-interpreter-js-7e2aed97ebee2c55/inline0.js" crossorigin="anonymous" integrity="sha384-gnNZLAYQXkHUA9k7ZcMSPH3Gj0EBQd97HFIP6akp4GAci8VYJNmt5tBwadvhv7j+"><link rel="modulepreload" href="/cardcount-tenerife/snippets/dioxus-interpreter-js-7e2aed97ebee2c55/src/js/common.js" crossorigin="anonymous" integrity="sha384-lNXbLTw7Z18z5HtM0HV3R7/8J+II5Ei18I53QeIZolR+l1nGEBr27UjMtT/DJpiC"><link rel="modulepreload" href="/cardcount-tenerife/snippets/dioxus-web-10186f9fcc0b4418/inline1.js" crossorigin="anonymous" integrity="sha384-2v8X0XAeO26J0vmoLhIbIeAjVzFnrY9iLhlYJcksTMp7Ip2tbDcoX4vD/hCan7M7"><link rel="preload" href="/cardcount-tenerife/frontend-7252e190ffc52843_bg.wasm" crossorigin="anonymous" integrity="sha384-kTVWlr9q6GoRoyM+XnCGhJC5oD/urkUZVRZI/4eR9jzGBY9HOxzjvfAKGyi8Yqz8" as="fetch" type="application/wasm"></head>
+  <body>
+    <div id="main"></div>
+  
+<script type="module">
+import init, * as bindings from '/cardcount-tenerife/frontend-7252e190ffc52843.js';
+const wasm = await init({ module_or_path: '/cardcount-tenerife/frontend-7252e190ffc52843_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>

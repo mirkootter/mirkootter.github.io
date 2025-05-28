@@ -1,0 +1,72 @@
+body {
+  background-color: #ececec;
+  font-family: cursive, sans-serif;
+}
+
+#header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+#header > img {
+  margin: 1rem;
+  width: 6rem;
+}
+
+.stack {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.stack h1 {
+  font-size: medium;
+  font-style: normal;
+  font-weight: normal;
+  min-width: 10rem;
+}
+.stack > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stack > div > span {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  margin: 5px;
+}
+.stack .card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1.5rem;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  font-size: 70%;
+  cursor: pointer;
+}
+
+.card.red {
+  background-color: #d32eef;
+  color: white;
+}
+.card.green {
+  background-color: #00c200;
+  color: white;
+}
+.card.yellow {
+  background-color: #d9d903;
+  color: black;
+}
+.card.blue {
+  background-color: blue;
+  color: white;
+}
+.card.black {
+  background-color: black;
+  color: white;
+}
+.card.disabled {
+  opacity: 0.2;
+  height: 1.3rem;
+}
