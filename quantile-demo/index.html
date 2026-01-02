@@ -6,7 +6,7 @@
     <title>Frontend</title>
     <link rel="stylesheet" href="/quantile-demo/style-46d5b2378f2d42f.css" integrity="sha384&#x2D;vl3byrzBfeyAly2O964SoMKrzlKD4uHEL75bQDTMyOeftvgkEj6gFwyh&#x2B;Zz1ce8L"/>
     <base href="/quantile-demo/" />
-  <link rel="modulepreload" href="/quantile-demo/frontend-8e0b1e4c86cee738.js" crossorigin="anonymous" integrity="sha384-E5jUM7WmfkW3OIaXzkWjzz18C3tvzfSxllZKqZ0K4eAfQk17bZTZyqqJ2Znffu/q"><link rel="preload" href="/quantile-demo/frontend-8e0b1e4c86cee738_bg.wasm" crossorigin="anonymous" integrity="sha384-iZ23wPpbv0fmkoqSshEiHq2yn/pWoulv0Xvgryd14sYji8LIaSpBvBSs58VIFvz3" as="fetch" type="application/wasm"></head>
+  <link rel="modulepreload" href="/quantile-demo/frontend-c20555cf28428b3d.js" crossorigin="anonymous" integrity="sha384-Dcd+/H9l3iEYs6UP77bdTTdbIDzKb32HFnF8nyQGcFmJSL5qcyUo1J9xn369uksb"><link rel="preload" href="/quantile-demo/frontend-c20555cf28428b3d_bg.wasm" crossorigin="anonymous" integrity="sha384-a9tQQ5Yn3/j1j9N3RzayUcebh0AujfYBEePoEzBzvg9XOUskHz3uyjYQG/c12mhu" as="fetch" type="application/wasm"></head>
   <body>
     <div id="container">
         <form>
@@ -17,7 +17,8 @@
             <div>Quantile (in %)</div>
             <input type="text" id="quantile" value="50" />
             <center>
-                <button type="submit" id="compute">Compute</button>
+                <button type="submit" id="compute_min">Compute Min</button>
+                <button type="button" id="compute_max">Compute Max</button>
             </center>
         </form>
         <hr/>
@@ -26,8 +27,8 @@
     </div>
   
 <script type="module">
-import init, * as bindings from '/quantile-demo/frontend-8e0b1e4c86cee738.js';
-const wasm = await init({ module_or_path: '/quantile-demo/frontend-8e0b1e4c86cee738_bg.wasm' });
+import init, * as bindings from '/quantile-demo/frontend-c20555cf28428b3d.js';
+const wasm = await init({ module_or_path: '/quantile-demo/frontend-c20555cf28428b3d_bg.wasm' });
 
 
 window.wasmBindings = bindings;
