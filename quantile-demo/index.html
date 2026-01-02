@@ -6,7 +6,7 @@
     <title>Frontend</title>
     <link rel="stylesheet" href="/quantile-demo/style-46d5b2378f2d42f.css" integrity="sha384&#x2D;vl3byrzBfeyAly2O964SoMKrzlKD4uHEL75bQDTMyOeftvgkEj6gFwyh&#x2B;Zz1ce8L"/>
     <base href="/quantile-demo/" />
-  <link rel="modulepreload" href="/quantile-demo/frontend-c20555cf28428b3d.js" crossorigin="anonymous" integrity="sha384-Dcd+/H9l3iEYs6UP77bdTTdbIDzKb32HFnF8nyQGcFmJSL5qcyUo1J9xn369uksb"><link rel="preload" href="/quantile-demo/frontend-c20555cf28428b3d_bg.wasm" crossorigin="anonymous" integrity="sha384-a9tQQ5Yn3/j1j9N3RzayUcebh0AujfYBEePoEzBzvg9XOUskHz3uyjYQG/c12mhu" as="fetch" type="application/wasm"></head>
+  <link rel="modulepreload" href="/quantile-demo/frontend-df8debd200149047.js" crossorigin="anonymous" integrity="sha384-OQnhuSLC/6Int7hQeovxKUUtxuxlt/HB2irDh+eA79e3cHWqhjry/szh3YfOfNfC"><link rel="preload" href="/quantile-demo/frontend-df8debd200149047_bg.wasm" crossorigin="anonymous" integrity="sha384-hots90iQGgdIHxdLk8yL8XKAxV+YUcDkakPgxFizcoIn7WzAxFFKjG3C2RC5lyxx" as="fetch" type="application/wasm"></head>
   <body>
     <div id="container">
         <form>
@@ -14,8 +14,8 @@
             <input type="text" id="arr1" value="3 3 99 99" />
             <div>List 2</div>
             <input type="text" id="arr2" value="4 4 5 5" />
-            <div>Quantile (in %)</div>
-            <input type="text" id="quantile" value="50" />
+            <div>Index</div>
+            <input type="text" id="index" value="3" />
             <center>
                 <button type="submit" id="compute_min">Compute Min</button>
                 <button type="button" id="compute_max">Compute Max</button>
@@ -27,8 +27,8 @@
     </div>
   
 <script type="module">
-import init, * as bindings from '/quantile-demo/frontend-c20555cf28428b3d.js';
-const wasm = await init({ module_or_path: '/quantile-demo/frontend-c20555cf28428b3d_bg.wasm' });
+import init, * as bindings from '/quantile-demo/frontend-df8debd200149047.js';
+const wasm = await init({ module_or_path: '/quantile-demo/frontend-df8debd200149047_bg.wasm' });
 
 
 window.wasmBindings = bindings;

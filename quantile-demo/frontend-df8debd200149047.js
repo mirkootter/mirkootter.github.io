@@ -343,8 +343,8 @@ function __wbg_get_imports() {
         getDataViewMemory0().setInt32(arg0 + 4 * 1, len1, true);
         getDataViewMemory0().setInt32(arg0 + 4 * 0, ptr1, true);
     };
-    imports.wbg.__wbindgen_cast_473f7222ff5285e7 = function(arg0, arg1) {
-        // Cast intrinsic for `Closure(Closure { dtor_idx: 32, function: Function { arguments: [Ref(NamedExternref("Event"))], shim_idx: 33, ret: Unit, inner_ret: Some(Unit) }, mutable: false }) -> Externref`.
+    imports.wbg.__wbindgen_cast_74be255cfb68c2ab = function(arg0, arg1) {
+        // Cast intrinsic for `Closure(Closure { dtor_idx: 34, function: Function { arguments: [Ref(NamedExternref("Event"))], shim_idx: 35, ret: Unit, inner_ret: Some(Unit) }, mutable: false }) -> Externref`.
         const ret = makeClosure(arg0, arg1, wasm.wasm_bindgen__closure__destroy__h487441b83b26cb2e, wasm_bindgen__convert__closures________invoke__he9cf93f1f61824c7);
         return ret;
     };
