@@ -39,3 +39,7 @@ input[type=text] {
   border-radius: 0.5rem;
   color: #980000;
 }
+
+p {
+  overflow: auto;
+}
