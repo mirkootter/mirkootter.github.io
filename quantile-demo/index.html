@@ -6,18 +6,19 @@
     <title>Frontend</title>
     <link rel="stylesheet" href="/quantile-demo/style-46d5b2378f2d42f.css" integrity="sha384&#x2D;vl3byrzBfeyAly2O964SoMKrzlKD4uHEL75bQDTMyOeftvgkEj6gFwyh&#x2B;Zz1ce8L"/>
     <base href="/quantile-demo/" />
-  <link rel="modulepreload" href="/quantile-demo/frontend-51462198c91fda37.js" crossorigin="anonymous" integrity="sha384-ikKSqfjhFUeWKF2Dhgq/j8E+/2EdFsO/5xaj8LVgMVNJoOoMxstvwHdbFYGwOym4"><link rel="preload" href="/quantile-demo/frontend-51462198c91fda37_bg.wasm" crossorigin="anonymous" integrity="sha384-ITnJMGySkmlEduTWpkJV1bnglIGle96GSirQFV6Jxn9lKQxHHC8CAdhxrg9hgMdI" as="fetch" type="application/wasm"></head>
+  <link rel="modulepreload" href="/quantile-demo/frontend-854771a6881a12e5.js" crossorigin="anonymous" integrity="sha384-ikKSqfjhFUeWKF2Dhgq/j8E+/2EdFsO/5xaj8LVgMVNJoOoMxstvwHdbFYGwOym4"><link rel="preload" href="/quantile-demo/frontend-854771a6881a12e5_bg.wasm" crossorigin="anonymous" integrity="sha384-tAnsMbDEs3Fdn1Hn4sCio1sS4xwHi7y1YTStqW5L0L7H0NdTuHdBYR/j+qnDTxGi" as="fetch" type="application/wasm"></head>
   <body>
     <div id="container">
         <form>
             <div>List 1</div>
-            <input type="text" id="arr1" value="3 3 99 99" />
+            <input type="text" id="arr1" value="1 2 3 4 5 11 12 13 14 17 18 20" />
             <div>List 2</div>
-            <input type="text" id="arr2" value="4 4 5 5" />
+            <input type="text" id="arr2" value="6 7 8 9 10 15 16 19" />
             <div>Index</div>
-            <input type="text" id="index" value="3" />
+            <input type="text" id="index" value="9" />
             <center>
-                <button type="submit" id="compute_min">Compute Min</button>
+                <button type="submit" id="compute_default">Compute</button>
+                <button type="button" id="compute_min">Compute Min</button>
                 <button type="button" id="compute_max">Compute Max</button>
             </center>
         </form>
@@ -27,8 +28,8 @@
     </div>
   
 <script type="module">
-import init, * as bindings from '/quantile-demo/frontend-51462198c91fda37.js';
-const wasm = await init({ module_or_path: '/quantile-demo/frontend-51462198c91fda37_bg.wasm' });
+import init, * as bindings from '/quantile-demo/frontend-854771a6881a12e5.js';
+const wasm = await init({ module_or_path: '/quantile-demo/frontend-854771a6881a12e5_bg.wasm' });
 
 
 window.wasmBindings = bindings;
